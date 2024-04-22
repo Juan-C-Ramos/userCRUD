@@ -1,0 +1,69 @@
+*,*::after,*::before{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    background-color: #3b5998;
+    padding: 5px 15px; 
+    border: 1px solid #0000ff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px black;
+}
+.plus{
+    font-size: 1.5em;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0 10px #000;
+    margin-bottom: 20px;
+    width: auto
+
+}
+
+.app{
+    height: 100vh;
+}
+button :hover{
+    animation: hoverButton 1s linear;
+    cursor: pointer !important;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+        font-size: 15px;
+        gap: 60px;
+    }
+    
+}
+
+@keyframes hoverButton {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+    
+}

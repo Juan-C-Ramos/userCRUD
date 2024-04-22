@@ -1,0 +1,56 @@
+.form__bg{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(18, 23, 53, 0.438);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.form__card{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 325px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    z-index: 2;
+    padding: 20px;
+}
+.form__card label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px;
+}
+
+.form__card input{
+    color: #000;
+    margin-bottom: 10px;
+}
+.form__card button{
+    color: white;
+    text-shadow: 0 0 10px #000000;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 0 !important;
+    color: black !important;
+    box-shadow: 0 0 0 0 !important;
+}
